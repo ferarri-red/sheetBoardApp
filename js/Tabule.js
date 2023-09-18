@@ -23,6 +23,7 @@ class Tabule {
                 this.ulozPoznamky();
                 this.vypisPoznamky();
                 this.popisInput.value = '';
+                this.nazevInput.value = '';
                 this.aktualizujPocetZnaku();
             } else {
                 alert('K uložení musíte vyplnit název a popis poznámky.');

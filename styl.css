@@ -1,4 +1,4 @@
-/* Fonts (PP Neue Montreal) */
+/** Fonts (PP Neue Montreal) */
 @font-face {
     font-family: 'PP Neue Montreal';
     src: url('fonts/PPNeueMontreal-Regular.woff') format('woff');
@@ -12,7 +12,7 @@
     font-style: italic;
     font-weight: 600;
 }
-/* Fonts (PP Neue Montreal) */
+/** Fonts (PP Neue Montreal) */
 
 body {
     background: linear-gradient(#dcf0c8, #ebebeb);
@@ -58,11 +58,11 @@ textarea {
 }
 
 input:focus, textarea:focus, select:focus, button:focus {
-    box-shadow: 0 0 0 1.5px #9178F0; /* Vytvoří vlastní styl outline */
-    outline: none; /* Odstraní defaultní styl outline */
+    box-shadow: 0 0 0 1.5px #9178F0; /** Vytvoří vlastní styl outlinu */
+    outline: none; /** Odstraní defaultní styl outlinu */
 }
 
-/* Classy */
+/** Classy */
 
 .tlacitko {
     background: transparent;
@@ -101,6 +101,10 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin: 5px;
     background: rgb(255, 255, 255);
     color: #004B00;
+    /** Zde došlo k duplikaci stylu z body, jelikož se v některých prohlížečích aplikovalo defaultní písmo. */
+    font-family: PP Neue Montreal; 
+    font-weight: 100;
+    font-size: 1em;
 }
 
 .popis {
@@ -113,6 +117,10 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin: 5px;
     background: rgb(255, 255, 255);
     color: #004B00;
+    /** Zde došlo k duplikaci stylu z body, jelikož se v některých prohlížečích aplikovalo defaultní písmo. */
+    font-family: PP Neue Montreal; 
+    font-weight: 100;
+    font-size: 1em;
 }
 
 .poznamky {
@@ -121,14 +129,15 @@ input:focus, textarea:focus, select:focus, button:focus {
     font-size: 1em;
     color: #004B00;
     border-radius: 10px;
-    flex-basis: calc(33.33% - 20px); /* 3 poznámky na řádek + odstup mezi */
+    flex-basis: calc(33.33% - 20px); /** 3 poznámky na řádek + odstup mezi */
     box-sizing: border-box;
-    margin: 0 1em 1.2em 0; /* Margin mezi poznámkami */
+    margin: 0 1em 1.2em 0; /** Margin mezi poznámkami */
     padding: 0.3125em 1.875em;
-    max-width: calc(33.33% - 20px); /* Pevná šířka pro každou poznámku */
+    max-width: calc(33.33% - 20px); /** Pevná šířka pro každou poznámku */
 }
+/** Classy */
 
-/* IDečka */
+/** IDečka */
 
 #pridat {
     border: 0;
@@ -149,7 +158,8 @@ input:focus, textarea:focus, select:focus, button:focus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 960px; /* šířka pro poznámky */
+    max-width: 960px; /** šířka pro poznámky */
     margin: 0.625em auto;
     padding: 0.625em;
 }
+/** IDečka */
