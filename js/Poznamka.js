@@ -1,4 +1,4 @@
-'use strict' /* use strict, nemusí povolit JS chyby v kódu. */
+'use strict' /** use strict nemusí povolit JS chyby v kódu. */
 
 class Poznamka {
     

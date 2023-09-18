@@ -1,4 +1,4 @@
-'use strict'; 
+'use strict' /** use strict nemusí povolit JS chyby v kódu. */
 
 class Tabule {
     
@@ -56,7 +56,7 @@ class Tabule {
             poznamky.innerHTML = `<p>${poznamka.nazev}</p>${poznamka.popis}`;
 
             const upravitPoznamku = (poznamka) => {
-                const noveUdaje = prompt('Upravte název a popis, který oddělte dvojtečkou(:)', `${poznamka.nazev}: ${poznamka.popis}`);
+                const noveUdaje = prompt('Upravte název a popis, které oddělte dvojtečkou (:)', `${poznamka.nazev}: ${poznamka.popis}`);
                 if (noveUdaje !== null) {
                     const [novyNazev, novyPopis] = noveUdaje.split(':').map(str => str.trim());
                     poznamka.nazev = novyNazev;
