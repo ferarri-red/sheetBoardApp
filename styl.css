@@ -1,0 +1,145 @@
+/* Fonts (PP Neue Montreal) */
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('fonts/PPNeueMontreal-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
+    src: url('fonts/PPNeueMontreal-BoldItalic.woff') format('woff');
+    font-style: italic;
+    font-weight: 600;
+}
+/* Fonts (PP Neue Montreal) */
+
+body {
+    background: linear-gradient(#dcf0c8, #ebebeb);
+    background-attachment: fixed;
+    font-family: PP Neue Montreal; 
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: auto;
+}
+
+nav {
+    text-align: center;
+    padding: 0;
+    margin: 50px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0 15px;
+    margin: 0;
+}
+
+button {
+    background-color: transparent;
+    border-style: none;
+}
+
+/* Classy */
+
+.tlacitko {
+    background: transparent;
+    color: #9178F0;
+    padding: 15px 35px;
+    border-radius: 100px;
+    border: 1.5px solid;
+    transition: background 0.5s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tlacitko:hover {
+    background: #9178F0;
+    color: #fff;
+    border: 1.5px solid #9178F0;
+}
+
+.oaplikaciText {
+    text-align: left;
+    display: flex;
+    margin: 75px auto;
+    color: #004B00;
+    background: white;
+    max-width: 250px;
+    border-radius: 10px;
+    padding: 30px 30px;
+}
+
+.nazev {
+    border: 0;
+    font-size: 1em;
+    width: 275px;
+    border-radius: 100px;
+    padding: 10px 15px;
+    margin: 5px;
+    background: rgb(255, 255, 255);
+    color: #004B00;
+}
+
+.popis {
+    border: 0;
+    font-size: 1em;
+    width: 275px;
+    height: 130px;
+    border-radius: 10px;
+    padding: 0px 15px;
+    margin: 5px;
+    background: rgb(255, 255, 255);
+    color: #004B00;
+}
+
+.poznamky {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 1em;
+    color: #004B00;
+    border-radius: 10px;
+    flex-basis: calc(33.33% - 20px); /* 3 poznámky na řádek + odstup mezi */
+    box-sizing: border-box;
+    margin: 0 1em 1.2em 0; /* Margin mezi poznámkami */
+    padding: 0.3125em 1.875em;
+    max-width: calc(33.33% - 20px); /* Pevná šířka pro každou poznámku */
+}
+
+/* IDečka */
+
+#pridat {
+    border: 0;
+    background-color: transparent;
+    width: 55px;
+}
+
+#uprav, #odstranit {
+    width: 30px;
+}
+
+#pocetZnaku {
+    font-size: 1em;
+    color: #a9a9a9;
+}
+
+#tabulePoznamky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px; /* šířka pro poznámky */
+    margin: 0.625em auto;
+    padding: 0.625em;
+}

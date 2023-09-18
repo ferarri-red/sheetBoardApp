@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sheetBoard App</title>
+    <link rel="stylesheet" href="styl.css" type="text/css" />
+</head>
+<body>
+    
+    <!-- menu -->
+    <nav>
+        <ul>
+            <li><a class="tlacitko" href="index.html"><i><b>sheet</b></i>Board</a></li>
+            <li><a class="tlacitko" href="oaplikaci.html">o aplikaci</a></li>
+        </ul>
+    </nav>
+
+    <!-- Inputy a místo pro vyplňění názvu a texu poznámky. -->
+    <div>
+        <input class="nazev" type="text" id="nazev" placeholder="název:"><br/>
+        <input class="popis" type="text" id="popis" placeholder="popis:"><br/>
+        <div id="pocetZnaku">0/400</div><br/>
+    
+        <button id="pridat"><img src="ikony/ikonaPridat.svg" alt="Přidat poznámku"></button><br/>
+    </div>
+
+    <!-- Místo pro ukládání poznámek. -->
+    <div id="tabulePoznamky"></div>
+
+    <!-- skripty -->
+    <script src="js/Tabule.js"></script> 
+    <script src="js/Poznamka.js"></script>
+    <script src="js/obsluha.js"></script>
+
+</body>
+</html>
