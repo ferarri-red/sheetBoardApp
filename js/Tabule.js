@@ -69,7 +69,7 @@ class Tabule {
             }
 
             const ikonaUpravit = document.createElement('button');
-            ikonaUpravit.innerHTML = '<img src="ikony/ikonaUpravit.svg" id="uprav" alt="Upravit poznámku">';
+            ikonaUpravit.innerHTML = '<img src="ikony/ikonaUpravit.svg" id="upravit" alt="Upravit poznámku">';
             ikonaUpravit.onclick = () => {
                 upravitPoznamku(poznamka);
             };

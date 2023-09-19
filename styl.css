@@ -132,9 +132,12 @@ input:focus, textarea:focus, select:focus, button:focus {
     flex-basis: calc(33.33% - 20px); /** 3 poznámky na řádek + odstup mezi */
     box-sizing: border-box;
     margin: 0 1em 1.2em 0; /** Margin mezi poznámkami */
-    padding: 0.3125em 1.875em;
+    padding: 0.3125em 1.875em 1em;
     max-width: calc(33.33% - 20px); /** Pevná šířka pro každou poznámku */
+    position: relative;
+    word-wrap: break-word;
 }
+
 /** Classy */
 
 /** IDečka */
@@ -145,8 +148,15 @@ input:focus, textarea:focus, select:focus, button:focus {
     width: 55px;
 }
 
-#uprav, #odstranit {
+#upravit, #odstranit {
     width: 30px;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+#upravit {
+    right: 45px; /** Toto je mezera mezi ikonkami upravit a odstranit */
 }
 
 #pocetZnaku {
