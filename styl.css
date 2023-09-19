@@ -153,7 +153,14 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin: 0 0 1.5em 0; /** Margin mezi poznámkami */
     padding:  0 1.5em 1.5em 1em;
     position: relative;
-    word-wrap: break-word; /* Tato vlastnost způsobí zalomení textu na nový řádek při překročení šířky */
+    word-wrap: break-word; /** Tato vlastnost způsobí zalomení textu na nový řádek při překročení šířky. */
+
+}
+
+.poznamka { /** popis poznámky se zalomí a nebude zatékat do ikonek 'upravit' a 'odstranit'. */
+    width: 80%;
+    word-wrap: break-word;
+    padding: 1em 0 0 0;
 }
 
 /** Classy */

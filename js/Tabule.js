@@ -54,7 +54,7 @@ class Tabule {
             
             const poznamky = document.createElement('div');
             poznamky.className = 'poznamky';
-            poznamky.innerHTML = `<p>${poznamka.nazev}</p>${poznamka.popis}`;
+            poznamky.innerHTML = `<div class="poznamka">${poznamka.nazev}</div><p>${poznamka.popis}</p>`;
 
             const upravitPoznamku = (poznamka) => {
                 const noveUdaje = prompt('Upravte název a popis, které oddělte dvojtečkou (:)', `${poznamka.nazev}: ${poznamka.popis}`);
