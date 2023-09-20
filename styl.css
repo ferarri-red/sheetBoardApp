@@ -151,7 +151,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     border-radius: 10px;
     box-sizing: border-box;
     margin: 0 0 1.5em 0; /** Margin mezi poznámkami */
-    padding:  0 1.5em 1.5em 1em;
+    padding:  0 1.5em 0.5em 1em;
     position: relative;
     word-wrap: break-word; /** Tato vlastnost způsobí zalomení textu na nový řádek při překročení šířky. */
 
