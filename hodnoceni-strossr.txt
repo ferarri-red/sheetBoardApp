@@ -1,0 +1,15 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - Upravil bych názvy popisInput, poznamkyZeStorage apod., aby se v nich nemíchala angličtina s češtinou. Funkce upravitPoznamku by měla být v rozkazovacím tvaru.
+2. Dodržení principů SRP a SoC - Správa poznámek a interakce s uživatelem se řeší v jedné třídě Tabule. To by mělo být odděleno. Úprava a mazání poznámek by nemělo být součástí metody vypisPoznamky().
+3. Vhodný výběr datových typů - V pořádku.
+4. Formátování kódu - Ok.
+5. Duplicitní kód a nekonečné cykly - Metoda _pridejIkonu() asi měla řešit opakování kódu pro přidání ikon - ikonaUpravit a ikonaOdstranit, ale nenašel jsem, kde je volána.
+6. Validace vstupních dat - Je validována délka popisu (projde 401 znaků), délka nadpisu omezena není. Jde uložit záznam obsahující pouze mezeru. Při editaci se upravený záznam už nevaliduje. Validační podmínky bych sjednotil: this.popisInput.value !== '' && this.nazevInput.value.length !== 0
+7. Logičnost a složitost - Funkce upravitPoznamku by měla být deklarována mimo for cyklus. Editace záznamů je řešena pomocí prompt() a nemá validace.
+8. Komentáře - V JS kódu komentáře chybí.
+9. Celkové hodnocení - Aplikace má své vlastní zadání. Pro začínajícího programátora je to dobrý kus práce. Největší problém je míchání uživatelské interakce s logikou v jedné třídě. Bylo by dobré ještě vylepšit validace (a editaci záznamů) a doplnit do kódu komentáře.
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
+
+hodnoceni-strossr.txt
